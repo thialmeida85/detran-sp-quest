@@ -105,4 +105,4 @@ const server=http.createServer(async(req,res)=>{
   }
   return json(res,404,{error:"not_found"});
 });
-server.listen(PORT,"0.0.0.0",()=>console.log(`DETRAN-SP Quest API on :${PORT}`));
+server.listen(PORT,"0.0.0.0",()=>console.log(`DETRAN-SP Quest API on :${PORT} | Groq configured: ${Boolean(GROQ_KEY)} | model: ${GROQ_MODEL}`));
